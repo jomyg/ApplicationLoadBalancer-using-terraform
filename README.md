@@ -5,3 +5,5 @@ An Application Load Balancer functions at the application layer, the seventh lay
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
 ## Description:
+
+The Application Load Balancer is a feature of Elastic Load Balancing that allows a developer to configure and route incoming end-user traffic to applications based in the AWS public cloud. Application Load Balancer enables content-based routing and allows requests to be routed to different applications behind a single load balance. While the Classic Load Balancer doesn't do that, a single ELB can host single application. Application Load Balancer works in Layer 7 of the OSI reference model for how applications communicate over a network.
