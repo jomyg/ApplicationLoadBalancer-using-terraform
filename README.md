@@ -310,7 +310,7 @@ The following diagram illustrates the basic components.
 
 ![alt text](https://i.ibb.co/dQ7rc4k/Screenshot-from-2021-05-19-18-59-29.png)
 
-### Module behind the code
+### VPC Module behind the code
 
 #### Create a file datasource.tf
 ```sh
@@ -514,4 +514,13 @@ variable "env" {
 ```
 
 
+## Conclusion
 
+Here is a simple document on how to use Terraform to build an AWS ALB Application load balancer.
+
+#### ⚙️ Connect with Me
+
+<p align="center">
+<a href="mailto:jomyambattil@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/jomygeorge11"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a> 
+<a href="https://www.instagram.com/therealjomy"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a><br />
