@@ -28,7 +28,7 @@ Use the following command to install Terraform
 wget https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_linux_amd64.zip
 unzip terraform_0.15.3_linux_amd64.zip 
 ls -l
--rwxr-xr-x 1 root root 79991413 May  6 18:03 terraform  <<=======
+-rwxr-xr-x 1 root root 79991413 May  6 18:03 terraform 
 -rw-r--r-- 1 root root 32743141 May  6 18:50 terraform_0.15.3_linux_amd64.zip
 mv terraform /usr/bin/
 which terraform 
@@ -295,3 +295,17 @@ resource "aws_lb_listener_rule" "main" {
   }
 }
 ```
+The Basic configuration for terraform aws is completed. Now we need to initialize the terraform using the loaded values
+
+## Creating Application Load Balancer
+> A load balancer serves as the single point of contact for clients. The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones.
+
+The main components of an Application load balancer are 
+
+- [Listeners](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html) : A listener checks for connection requests from clients, using the protocol and port that you configure. The rules that you define for a listener determine how the load balancer routes requests to its registered targets. Each rule consists of a priority, one or more actions, and one or more conditions. When the conditions for a rule are met, then its actions are performed. You must define a default rule for each listener, and you can optionally define additional rules.
+
+- [Traget Group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html) : Each target group routes requests to one or more registered targets, such as EC2 instances, using the protocol and port number that you specify. You can register a target with multiple target groups. You can configure health checks on a per target group basis. Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
+
+The following diagram illustrates the basic components. 
+
+![alt text](https://i.ibb.co/dQ7rc4k/Screenshot-from-2021-05-19-18-59-29.png)
